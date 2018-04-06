@@ -10,9 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second Activity !"
+        android:text="@string/second_activity"
         android:textAllCaps="false"
-        android:textSize="50dp"
+        android:id="@+id/output"
+        android:textSize="40sp"
         android:layout_gravity="center"/>
 
 

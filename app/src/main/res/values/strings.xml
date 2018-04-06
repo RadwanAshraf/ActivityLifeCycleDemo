@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">activityLifeCycle</string>
+    <string name="sec_activity">sec Activity</string>
+    <string name="second_activity">Second Activity !</string>
 </resources>

@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     Button button;
@@ -19,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button=findViewById(R.id.B_secActivity);
-        Toast.makeText(MainActivity.this, "OnCreate IS Here",Toast.LENGTH_LONG).show();
-
+        Toast.makeText(MainActivity.this, "MainActivity ' OnCreate ' IS Here",Toast.LENGTH_SHORT).show();
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent=new Intent(getApplicationContext(),SecondActivity.class);
                 startActivity(intent);
 
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //// Menu inflater
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
 
-        Toast.makeText(MainActivity.this, "OnStart IS Here",Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnStart ' IS Here",Toast.LENGTH_SHORT).show();
 
         super.onStart();
     }
@@ -80,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
 
-        Toast.makeText(MainActivity.this, "OnResume IS Here",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnResume ' IS Here",Toast.LENGTH_SHORT).show();
 
         super.onResume();
     }
@@ -88,14 +91,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
 
-        Toast.makeText(MainActivity.this, "OnPause IS Here",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnPause ' IS Here",Toast.LENGTH_SHORT).show();
         super.onPause();
     }
 
     @Override
     protected void onStop() {
 
-        Toast.makeText(MainActivity.this, "OnStop IS Here",Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnStop ' IS Here",Toast.LENGTH_SHORT).show();
 
         super.onStop();
     }
@@ -103,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
 
-        Toast.makeText(MainActivity.this, "OnDestroy IS Here",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnDestroy ' IS Here",Toast.LENGTH_SHORT).show();
 
         super.onDestroy();
     }
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
 
-        Toast.makeText(MainActivity.this, "OnRestart IS Here",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "MainActivity ' OnRestart ' IS Here",Toast.LENGTH_SHORT).show();
 
         super.onRestart();
     }
